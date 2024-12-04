@@ -1,0 +1,80 @@
+{
+    "categories": [
+      {
+        "id": 1,
+        "title": "Educational",
+        "icon": "educational-icon",
+        "subCategories": [
+          {
+            "id": 1,
+            "title": "Assignments"
+          },
+          {
+            "id": 2,
+            "title": "Exams"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Health",
+        "icon": "health-icon",
+        "subCategories": [
+          {
+            "id": 1,
+            "title": "Workout"
+          },
+          {
+            "id": 2,
+            "title": "Medication"
+          },
+          {
+            "id": 3,
+            "title": "Diet"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "title": "House",
+        "icon": "house-icon",
+        "subCategories": [
+          {
+            "id": 1,
+            "title": "Grocery"
+          },
+          {
+            "id": 2,
+            "title": "Chores"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "title": "Work",
+        "icon": "work-icon",
+        "subCategories": [
+          {
+            "id": 1,
+            "title": "Meetings"
+          },
+          {
+            "id": 2,
+            "title": "Projects"
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "title": "Personal",
+        "icon": "personal-icon",
+        "subCategories": [
+          {
+            "id": 1,
+            "title": "Anything Personal"
+          }
+        ]
+      }
+    ]
+  }
+  

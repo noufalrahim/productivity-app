@@ -1,0 +1,102 @@
+{
+  "data": {
+    "id": "1",
+    "total": 10,
+    "pending": 9,
+    "completed": 1,
+    "tasks": [
+      {
+        "id": "1",
+        "title": "Drink 5L Water",
+        "description": "Description 1",
+        "allDay": false,
+        "dueTimeStamp": 1733328000,
+        "completed": false,
+        "category": "HEALTH"
+      },
+      {
+        "id": "2",
+        "title": "Submit Assignment",
+        "description": "Description 2",
+        "allDay": false,
+        "dueTimeStamp": 1590019200,
+        "completed": false,
+        "category": "EDUCATION"
+      },
+      {
+        "id": "3",
+        "title": "Book Train Tickets",
+        "description": "Description 3",
+        "allDay": false,
+        "dueTimeStamp": 1614729600000,
+        "completed": false,
+        "category": "WORK"
+      },
+      {
+        "id": "4",
+        "title": "Buy Groceries",
+        "description": "Description 4",
+        "allDay": false,
+        "dueTimeStamp": 1614816000000,
+        "completed": false,
+        "category": "HOUSE"
+      },
+      {
+        "id": "5",
+        "title": "Write Journal",
+        "description": "Description 5",
+        "allDay": false,
+        "dueTimeStamp": 1614902400000,
+        "completed": false,
+        "category": "PERSONAL"
+      },
+      {
+        "id": "6",
+        "title": "Clean Windows",
+        "description": "Description 6",
+        "allDay": false,
+        "dueTimeStamp": 1614988800000,
+        "completed": false,
+        "category": "HOUSE"
+      },
+      {
+        "id": "7",
+        "title": "Exam Prep",
+        "description": "Description 7",
+        "allDay": false,
+        "dueTimeStamp": 1615075200000,
+        "completed": false,
+        "category": "EDUCATION"
+      },
+      {
+        "id": "8",
+        "title": "Task 8",
+        "description": "Description 8",
+        "allDay": false,
+        "dueTimeStamp": 1615161600000,
+        "completed": false,
+        "category": "WORK"
+      },
+      {
+        "id": "9",
+        "title": "Task 9",
+        "description": "Description 9",
+        "allDay": false,
+        "dueTimeStamp": 1615248000000,
+        "completed": false,
+        "category": "WORK"
+      },
+      {
+        "id": "10",
+        "title": "Task 10",
+        "description": "Description 10",
+        "allDay": false,
+        "dueTimeStamp": 1615334400000,
+        "completed": true,
+        "category": "PERSONAL"
+      }
+    ],
+    "updatedAt": 1614556800000,
+    "createdAt": 1614556800000
+  }
+}
