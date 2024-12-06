@@ -1,16 +1,16 @@
 import { ReactNode } from 'react';
 
-export type CardContentTypes = {
+export type SettingsCardContentType = {
     title: string;
     onClick: () => void;
     startIcon: ReactNode;
     trailIcon: string;
 };
 
-export interface CardBoxProps {
+export interface SettingsCardBoxProps {
     backgroundStyle: {
         backgroundColor: string;
         color: string;
     },
-    cardContents: CardContentTypes[];
+    cardContents: SettingsCardContentType[];
 }

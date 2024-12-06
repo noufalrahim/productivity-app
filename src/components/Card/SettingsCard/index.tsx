@@ -1,12 +1,12 @@
 import React from 'react';
 import { View, Text, Pressable } from 'react-native';
-import { CardBoxProps } from './types';
+import { SettingsCardBoxProps } from './types';
 import { Colors } from 'react-native/Libraries/NewAppScreen';
 import { styles } from './styles';
 import { Divider } from 'react-native-paper';
 import Entypo from 'react-native-vector-icons/Entypo';
 
-export default function CardBox({ backgroundStyle, cardContents }: CardBoxProps) {
+export default function SettingsCard({ backgroundStyle, cardContents }: SettingsCardBoxProps) {
     return (
         <View
             style={[{

@@ -1,11 +1,12 @@
-import { TaskType } from '../../screens/HomeScreen/type';
-
-export interface TaskCardProps {
+export interface TimeCardProp {
     backgroundStyle: {
         backgroundColor: string;
         color: string;
         primary: string;
         secondary: string;
     };
-    task: TaskType;
+    time: Date;
+    setTime: (time: Date) => void;
+    open: boolean;
+    setOpen: (open: boolean) => void;
 }

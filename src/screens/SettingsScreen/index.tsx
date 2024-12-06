@@ -6,12 +6,12 @@ import {
 } from 'react-native';
 import { styles } from './styles';
 import AppBar from '../../components/AppBar';
-import CardBox from '../../components/Card';
 import { theme } from '../../theme';
-import { CardContentTypes } from '../../components/Card/types';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import { SettingsScreenNavigationProp } from '../../navigators/type';
+import SettingsCard from '../../components/Card/SettingsCard';
+import { SettingsCardContentType } from '../../components/Card/SettingsCard/types';
 export default function SettingsScreen({navigation}: {navigation: SettingsScreenNavigationProp}) {
     const isDarkMode = useColorScheme() !== 'dark';
 
@@ -20,10 +20,10 @@ export default function SettingsScreen({navigation}: {navigation: SettingsScreen
         color: isDarkMode ? theme.colors.lighter : theme.colors.darker,
     };
 
-    const setupCardContents: CardContentTypes[] = [
+    const setupCardContents: SettingsCardContentType[] = [
         {
             title: 'Select An App',
-            onClick: () => console.log('log/SettingsScreen/func: Select An App'),
+            onClick: () => navigation.navigate('AllAppsScreen'),
             startIcon: <MaterialCommunityIcons name="tune-variant" size={18} color={backgroundStyle.color} />,
             trailIcon: 'chevron-right',
         },
@@ -41,7 +41,7 @@ export default function SettingsScreen({navigation}: {navigation: SettingsScreen
         },
     ];
 
-    const legalAndHelpCardContents: CardContentTypes[] = [
+    const legalAndHelpCardContents: SettingsCardContentType[] = [
         {
             title: 'Privacy Policy',
             onClick: () => console.log('log/SettingsScreen/func: Privacy Policy'),
@@ -68,13 +68,13 @@ export default function SettingsScreen({navigation}: {navigation: SettingsScreen
             <View>
                 <View style={[styles.cardContainer]}>
                     <Text style={[styles.cardHeader, { ...backgroundStyle }]}>SETUP</Text>
-                    <CardBox backgroundStyle={backgroundStyle} cardContents={setupCardContents} />
+                    <SettingsCard backgroundStyle={backgroundStyle} cardContents={setupCardContents} />
                 </View>
             </View>
             <View>
                 <View style={[styles.cardContainer]}>
                     <Text style={[styles.cardHeader, { ...backgroundStyle }]}>LEGAL & HELP</Text>
-                    <CardBox backgroundStyle={backgroundStyle} cardContents={legalAndHelpCardContents} />
+                    <SettingsCard backgroundStyle={backgroundStyle} cardContents={legalAndHelpCardContents} />
                 </View>
             </View>
             <View style={styles.version}>

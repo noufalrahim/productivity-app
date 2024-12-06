@@ -10,9 +10,11 @@ export const theme = {
       darker: Colors.darker,
       light: Colors.light,
       lighter: Colors.lighter,
-      black: '#0A0A0A',
+      black: 'black',
       white: Colors.white,
       primary: '#33CCFF',
       secondary: '#181818',
+      toggleSwitchColor: '#009731',
+      gray: '#979996',
     },
 };

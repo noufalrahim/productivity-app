@@ -1,5 +1,5 @@
 {
-  "data": {
+  "taskData": {
     "id": "1",
     "total": 10,
     "pending": 9,
@@ -21,7 +21,7 @@
         "allDay": false,
         "dueTimeStamp": 1590019200,
         "completed": false,
-        "category": "EDUCATION"
+        "category": "EDUCATIONAL"
       },
       {
         "id": "3",
@@ -66,7 +66,7 @@
         "allDay": false,
         "dueTimeStamp": 1615075200000,
         "completed": false,
-        "category": "EDUCATION"
+        "category": "EDUCATIONAL"
       },
       {
         "id": "8",

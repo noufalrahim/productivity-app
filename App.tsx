@@ -8,6 +8,7 @@ import {
 import { theme } from './src/theme';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import RootNavigator from './src/navigators';
+import { NativeBaseProvider } from 'native-base';
 
 function App(): React.JSX.Element {
   const isDarkMode = useColorScheme() !== 'dark';
@@ -23,7 +24,9 @@ function App(): React.JSX.Element {
         barStyle={isDarkMode ? 'light-content' : 'dark-content'}
         backgroundColor={backgroundStyle.backgroundColor}
       />
-      <RootNavigator />
+      <NativeBaseProvider>
+        <RootNavigator />
+      </NativeBaseProvider>
     </GestureHandlerRootView>
   );
 }

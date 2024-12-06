@@ -1,4 +1,4 @@
-export type CategoryNames = 'EDUCATION' | 'HEALTH' | 'HOUSE' | 'WORK' | 'PERSONAL';
+export type CategoryNames = 'EDUCATIONAL' | 'HEALTH' | 'HOUSE' | 'WORK' | 'PERSONAL';
 
 export type TaskType = {
     id: string;
@@ -15,7 +15,7 @@ export type TaskListType = {
     total: number;
     pending: number;
     completed: number;
-    tasks: TaskType;
+    tasks: TaskType[];
     createdAt: number;
     updatedAt: number;
 }

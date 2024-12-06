@@ -2,15 +2,10 @@ import React from 'react';
 import { Pressable, Text, View } from 'react-native';
 import { TaskCardProps } from './types';
 import { styles } from './styles';
-import { ExtractTime } from '../../utils/ExtractTime';
-import { ExtractDay } from '../../utils/ExtractDay';
+import { ExtractTime } from '../../../utils/ExtractTime';
+import { ExtractDay } from '../../../utils/ExtractDay';
 import Entypo from 'react-native-vector-icons/Entypo';
-import EducationIcon from '../../public/assets/educational-icon.svg';
-import HealthIcon from '../../public/assets/health-icon.svg';
-import HouseIcon from '../../public/assets/house-icon.svg';
-import PersonalIcon from '../../public/assets/personal-icon.svg';
-import WorkIcon from '../../public/assets/work-icon.svg';
-import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
+import { Icon } from '../../../utils/ExtractIcon';
 
 export default function TaskCard({ backgroundStyle, task }: TaskCardProps) {
     return (
@@ -38,20 +33,3 @@ export default function TaskCard({ backgroundStyle, task }: TaskCardProps) {
         </View>
     );
 }
-
-const Icon = ({name, size}: {name: string, size: number}) => {
-    switch (name) {
-        case 'EDUCATION':
-            return <EducationIcon width={size} height={size} />;
-        case 'HEALTH':
-            return <HealthIcon width={size} height={size} />;
-        case 'HOUSE':
-            return <HouseIcon width={size} height={size} />;
-        case 'PERSONAL':
-            return <PersonalIcon width={size} height={size} />;
-        case 'WORK':
-            return <WorkIcon width={size} height={size} />;
-        default:
-            return <MaterialIcons name="task-alt" size={size} color="red" />;
-    }
-};
