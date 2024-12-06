@@ -1,6 +1,8 @@
 package com.productivityapp
 
-import android.os.Bundle;
+import android.os.Bundle
+import android.content.Intent
+import android.provider.Settings
 
 import com.facebook.react.ReactActivity
 import com.facebook.react.ReactActivityDelegate
@@ -21,7 +23,16 @@ class MainActivity : ReactActivity() {
    */
   override fun createReactActivityDelegate(): ReactActivityDelegate =
       DefaultReactActivityDelegate(this, mainComponentName, fabricEnabled)
+
   override fun onCreate(savedInstanceState: Bundle?) {
-    super.onCreate(null)
+    super.onCreate(savedInstanceState)
+
+    // Start the usage settings activity
+    val intent = Intent(Settings.ACTION_USAGE_ACCESS_SETTINGS)
+    startActivity(intent)
+
+    // Start your custom service to monitor app usage
+    val serviceIntent = Intent(this, UsageMonitoringService::class.java)
+    startService(serviceIntent)
   }
 }
